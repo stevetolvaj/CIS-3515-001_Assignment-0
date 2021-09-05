@@ -1,5 +1,7 @@
+import kotlin.math.PI
+
 class Circle(_name: String) : Shape(_name) {
-    private var radius = 0.0
+    private var radius : Double = 0.0
 
     fun setDimensions(radius: Double) {
         this.radius = radius
@@ -10,7 +12,7 @@ class Circle(_name: String) : Shape(_name) {
     }
 
     override fun getArea(): Double {
-        return (radius * radius) * Math.PI
+        return (radius * radius) * PI
     }
 
 }

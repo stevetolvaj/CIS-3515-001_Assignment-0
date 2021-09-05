@@ -1,5 +1,5 @@
 abstract class Shape (_name : String) {
-    var name = _name
+    var name : String = _name
 
     open fun getArea(): Double {
         return 0.0
